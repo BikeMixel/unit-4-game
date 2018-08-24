@@ -1,51 +1,45 @@
-
-var goalNum = Math.floor(Math.random() * 102 + 18)
-    console.log(goalNum)
-    console.log("------")
-var redNum = Math.floor(Math.random() * 12 + 1)
-    console.log(redNum)
-var greenNum = Math.floor(Math.random() * 12 + 1)
-    console.log(greenNum)
+var goalNum = Math.floor(Math.random() * 102 + 18) 
+var redNum = Math.floor(Math.random() * 12 + 1)   
+var greenNum = Math.floor(Math.random() * 12 + 1)    
 var blueNum = Math.floor(Math.random() * 12 + 1)
-    console.log(blueNum)
 var yellowNum = Math.floor(Math.random() * 12 + 1)
-    console.log(yellowNum)
 
 var runTotal = 0
 var wins = 0
 var losses = 0 
 
-$("#goalNum").text("Goal Number " + goalNum)
+$("#goalNum").text("Goal Number: " + goalNum)
 $("#winNum").text("Wins: " + wins)
 $("#lossNum").text("Losses: " + losses)
+$("#runTotal").text("Your total: " + runTotal)
+
 // create a reset function
 function reset(){
-    goalNum = Math.floor(Math.random() * 102 + 18)
-        console.log(goalNum)
-    redNum = Math.floor(Math.random() * 12 + 1)
-        console.log(redNum)
-    greenNum = Math.floor(Math.random() * 12 + 1)
-        console.log(greenNum)
-    blueNum = Math.floor(Math.random() * 12 + 1)
-        console.log(blueNum)
+    goalNum = Math.floor(Math.random() * 102 + 18)       
+    redNum = Math.floor(Math.random() * 12 + 1)       
+    greenNum = Math.floor(Math.random() * 12 + 1)       
+    blueNum = Math.floor(Math.random() * 12 + 1)  
     yellowNum = Math.floor(Math.random() * 12 + 1)
-        console.log(yellowNum)
-    $("#goalNum").text("Goal Number: " + goalNum)
     runTotal = 0 
+
+    $("#goalNum").text("Goal Number: " + goalNum) 
     $("#runTotal").text("Your total: " + runTotal)
-}    
+}  
+
 // wins 
     function win(){
         wins++
         $("#winNum").text("Wins: " + wins)
         reset()
     }
+
 // losses 
     function loss(){
         losses++ 
         $("#lossNum").text("Losses: " + losses)
         reset()
     }
+
 // Event clickers for crystals
     $("#redGem").click(function(){
         runTotal = runTotal + redNum
@@ -87,7 +81,4 @@ function reset(){
                     loss()
                 }
     })
-
-
-// handle adding the guesses up 
 

@@ -1,0 +1,28 @@
+.header{
+    color: lightskyblue;
+    text-align: center;
+    font-family: fantasy;
+}
+.instructions{
+    color: lightskyblue;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.goalBox{
+    font-size: 32px;
+    color: lightskyblue;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.winLose{
+    font-size: 32px;
+    color: lightskyblue;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.userTotal{
+    font-size: 36px;
+    color: lightskyblue;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
