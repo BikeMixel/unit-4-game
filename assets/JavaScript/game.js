@@ -30,6 +30,7 @@ function reset(){
     function win(){
         wins++
         $("#winNum").text("Wins: " + wins)
+        alert("You won! :D")
         reset()
     }
 
@@ -37,6 +38,7 @@ function reset(){
     function loss(){
         losses++ 
         $("#lossNum").text("Losses: " + losses)
+        alert("You lost! :/")
         reset()
     }
 
