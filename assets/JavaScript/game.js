@@ -13,7 +13,6 @@ $("#winNum").text("Wins: " + wins)
 $("#lossNum").text("Losses: " + losses)
 $("#runTotal").text("Your total: " + runTotal)
 
-// create a reset function
 function reset(){
     goalNum = Math.floor(Math.random() * 102 + 18)       
     redNum = Math.floor(Math.random() * 12 + 1)       
@@ -26,23 +25,18 @@ function reset(){
     $("#runTotal").text("Your total: " + runTotal)
 }  
 
-// wins 
-    function win(){
-        wins++
-        $("#winNum").text("Wins: " + wins)
-        alert("You won! :D")
-        reset()
-    }
-
-// losses 
-    function loss(){
-        losses++ 
-        $("#lossNum").text("Losses: " + losses)
-        alert("You lost! :/")
-        reset()
-    }
-
-// Event clickers for crystals
+function win(){
+    wins++
+    $("#winNum").text("Wins: " + wins)
+    alert("You Won! :D")
+    reset()
+}
+function loss(){
+    losses++ 
+    $("#lossNum").text("Losses: " + losses)
+    alert("You Lost! :/")
+    reset()
+}
     $("#redGem").click(function(){
         runTotal = runTotal + redNum
         $("#runTotal").text("Your total: " + runTotal)
